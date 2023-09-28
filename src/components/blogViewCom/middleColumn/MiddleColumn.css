@@ -1,0 +1,105 @@
+
+.middle-column{
+display: flex;
+flex-direction: column;
+margin-top: 70px;
+padding: 20px 25px;
+font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+
+}
+.middleColumn-title{
+    font-size: 39x;
+}
+@media (max-width: 768px) {
+    .middleColumn-title{
+        font-size: 39x;
+    }
+    
+.middle-column{
+
+    margin-top: 70px;
+    padding: 10px 7px;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    
+    
+    }
+
+    .middleColumn-content > div {
+        width: 100% !important;
+    }
+ }
+.middleColumn-subheading{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+
+}
+.middleColumn-content-container{
+    width: 100%;
+}
+.middleColumn-content{
+    line-height: 33px;
+    font-size: 24px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+
+    margin-top: 19px;
+    text-align: justify;
+
+
+}
+.middleColumn-content > div {
+    width: 90% !important;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+.middleColumn-underline{
+    width: 200px;
+    background-color: #c00000;
+    height: 2px;
+}
+
+.share-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 40px; /* Adjust as needed */
+  }
+  .share-buttons >div {
+   font-weight: 600;
+  }
+  
+  
+  
+  
+  .share-button {
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px 8px 15px;
+    
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .share-button-whatsapp {
+    background-color: #14d63e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px 8px 15px;
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .share-button:hover {
+    background-color: #0056b3;
+  }
+  .share-button-whatsapp:hover {
+    background-color: #00a424;
+  }
+  

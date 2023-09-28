@@ -1,0 +1,54 @@
+
+ 
+  .left-column h2  {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .subheadings {
+background-color: rgb(91, 184, 184);
+
+  }
+  
+  .subheading {
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: #007bff;
+
+  }
+  
+  .blog-title {
+    margin-top: 0;
+  }
+  
+  /* Styling the selected subheading */
+  .subheading.active {
+    font-weight: bold;
+  }
+  
+  /* Adding some responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    /* body {
+      grid-template-columns: 1fr;
+    } */
+  
+    .left-column, .middle-column, .right-column {
+      padding: 10px;
+    }
+  }
+  .subsubheading{
+ 
+   transition:all 0.3s ease-in-out;
+  }
+  .subsubheading-ul{
+ 
+    transition:height 0.3s ease-in-out;
+    transition-delay: 0.1s;
+   }
+   .subsubheading-li{
+  font-size: 13px;
+    transition:height 0.3s ease-in-out;
+    transition-delay: 0.1s;
+   }

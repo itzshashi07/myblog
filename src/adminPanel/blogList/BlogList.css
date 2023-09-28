@@ -1,0 +1,71 @@
+ .blogList-table-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   margin-top: 100px;
+  }
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+  }
+
+.blogList-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 170px;
+    margin: 10px;
+ }
+ .blogList-btn {
+  background-color: #1b2838;
+  border: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 13px 20px;
+    font-size: 17px;
+    margin: 10px;
+    color: white;
+    
+ }
+ .deletBlogBtn{
+  margin: 10px; 
+  margin-right: 20px;
+  display: flex;
+  font-size: 18px;
+color: red;
+
+ } 
+  @media screen and (max-width: 600px) { 
+  .blogList-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin: 10px;
+ }
+ .blogList-btn {
+  background-color: rgb(241, 222, 16);
+  border: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 10px;
+    margin-top: 10px;
+ }
+  }

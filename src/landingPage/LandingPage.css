@@ -1,0 +1,224 @@
+
+ .landingPage {
+  width: 100%;
+}
+
+.blog-cards {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+background-color: #f7f7f7;
+
+}
+
+.blog_post {
+  display: flex;
+  background-color: #f7f7f7;
+}
+
+.bylaw-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.landingPage-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3; /* Gray background color */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Style form elements */
+.landingPage-form label,
+.landingPage-form input,
+.landingPage-form textarea,
+.landingPage-form button {
+  margin-bottom: 10px;
+  width: 100%; /* Make inputs and textarea take up full width */
+}
+
+.landingPage-form button {
+  background-color: black; /* Black button background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Adjust margin between form elements */
+.landingPage-form label,
+.landingPage-form input,
+.landingPage-form textarea {
+  margin-bottom: 15px;
+}
+.form-div-2{
+  display:  flex;
+ 
+}
+.form-div{
+  margin-bottom: 12px;
+  margin-top: -19px;
+}
+
+.service-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: -10px;
+
+}
+
+.service-checkboxes label {
+  display: flex;
+  align-items: center;
+}
+
+.service-checkboxes input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+.blog_post {
+margin: 40px;
+  background: #fff;
+  max-width: 340px;
+  margin-left: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+
+.container_copy {
+  padding: 2.5rem 2rem 2.5rem 2.3rem;
+}
+
+.img_pod {
+  height: 70px;
+  width: 70px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  position: absolute;
+  left: -10%;
+  top: -13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_pod-img {
+  height:4rem;
+  width: 4rem;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+ 
+}
+
+.container_copy-date {
+ 
+  color: #999;
+  font-size: .7rem;
+}
+
+.container_copy-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.container_copy-des {
+  margin: 0 0 2rem 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #5a5a5a;
+}
+
+.btn_primary {
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  padding: 0.6rem 1.4rem;
+  border-radius: 50px;
+  color: white;
+  font-size: 0.8rem;
+  box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+
+.btn_primary:hover {
+  box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
+}
+
+@media only screen and (max-width: 650px) {
+
+  .container_copy {
+    padding: 2rem 1.5rem 2rem 1.5rem ;
+  }
+  
+  .img_pod {
+    height: 48px;
+    width: 48px;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    position: absolute;
+    left: -10%;
+    top: -11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img_pod-img {
+    height:2.7rem;
+    width: 2.7rem;
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+   
+  }
+  
+
+}
+
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 8px 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+  background-color: #0056b3; /* Hover background color */
+}
+
+.page-button.active {
+  background-color: #0056b3; /* Active page background color */
+}

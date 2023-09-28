@@ -1,0 +1,289 @@
+/* .createBlog {
+    margin-top: 100px;
+    width: 100%;
+   
+}
+.createBlog-container {
+    padding: 16px;
+    width:80%;
+    border-radius: 2%;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+  }
+  
+  .createBlog-input-field {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: #ffffff;
+  }
+  .createBlog-textArea-field {
+    width: 100%;
+    padding: 15px;
+    height: 100px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    overflow-y: scroll;
+    background: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .createBlog-input-field:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  .registerbtn {
+    background-color:#2d4059 ;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+    font-size: 20px;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  a {
+    color: dodgerblue;
+  }
+  
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  .option-add-btn {
+    margin-left: 30px;
+    background-color: blue;
+    padding: 6px 10px;
+    color: white;
+    border: none;
+  }
+  @media screen and (max-width: 600px) {
+    .createBlog {
+      margin-top: 150px;
+    }
+  
+    .createBlog-container {
+      width: 90%;
+    }
+  
+    .createBlog-input-field,
+    .createBlog-textArea-field {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+    }
+  
+    .createBlog-input-field {
+      font-size: 16px;
+    }
+  
+    .createBlog-textArea-field {
+      height: 80px;
+      overflow-y: auto;
+    }
+  
+    .registerbtn {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    .option-add-btn {
+      margin-left: 0;
+      width: 100%;
+      padding: 8px 14px;
+    }
+  }
+  .jodit-editor-container {
+    width:400px!important;
+ 
+    overflow: hide;
+  }
+  .buyerFormEditCustomerView-contentTable{
+    width: 50%;
+   
+    overflow: hidden;
+  }
+  .createBlog-removeSubSubheading{
+      margin-left: 20px;
+     
+  }
+  .createBlog-removeSubheading{
+    padding:3px;
+    font-size: 15px;
+    background-color: red;
+    border: none;
+  } */
+
+  .createBlog {
+    margin-top: 100px;
+    width: 100%;
+  }
+ 
+  .createBlog-container {
+    padding: 16px;
+    width: 80%;
+    border-radius: 2%;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+  }
+  
+  /* Full-width input fields */
+  .createBlog-input-field {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: #ffffff;
+  }
+  
+  .createBlog-textArea-field {
+    width: 100%;
+    padding: 15px;
+    height: 100px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    overflow-y: scroll;
+    background: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .createBlog-input-field:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #2d4059;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+    font-size: 20px;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  .option-add-btn {
+    margin-left: 30px;
+    background-color: blue;
+    padding: 6px 10px;
+    color: white;
+    border: none;
+  }
+  
+  /* Media queries for mobile responsiveness */
+  @media screen and (max-width: 600px) {
+    .createBlog {
+      margin-top: 150px;
+    }
+  
+    .createBlog-container {
+      width: 90%;
+    }
+  
+    .createBlog-input-field,
+    .createBlog-textArea-field {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+    }
+  
+    .createBlog-input-field {
+      font-size: 16px;
+    }
+  
+    .createBlog-textArea-field {
+      height: 80px;
+      overflow-y: auto;
+    }
+  
+    .registerbtn {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    .option-add-btn {
+      margin-left: 0;
+      width: 100%;
+      padding: 8px 14px;
+    }
+  
+    .jodit-editor-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+  
+    }
+  .jodit-editor-limited-width{
+
+  }
+    .buyerFormEditCustomerView-contentTable {
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    .createBlog-removeSubSubheading {
+      margin-left: 20px;
+    }
+  
+    .createBlog-removeSubheading {
+      padding: 3px;
+      font-size: 15px;
+      background-color: red;
+      border: none;
+    }
+  }
+
+    .jodit-editor-container {
+
+    max-width: 500px;
+     overflow: hidden;
+  
+    }
+    .jodit-editor-limited-width{
+      max-width: 100px;
+      width: 100%;
+    
+    }

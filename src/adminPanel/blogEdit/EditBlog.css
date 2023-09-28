@@ -1,0 +1,17 @@
+.editBlog {
+    margin-top: 150px;
+}
+.blogEdit-addFieldbtn{
+    background-color: #2d4059;
+    color: aliceblue;
+    padding: 13px 20px;
+    margin: 10px;
+    font-size: 16px
+}
+.blogEdit-updateBtn{
+    background-color: #095fcf;
+    color: aliceblue;
+    padding: 13px 20px;
+    margin: 10px;
+    font-size: 16px
+}
