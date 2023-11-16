@@ -83,10 +83,10 @@ const truncateContent = (content, wordCount = 20) => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [contactNumber, setContactNumber] = useState('');
-  const [societyName, setSocietyName] = useState('');
-  const [societAddress, setSocietyAddress] = useState('');
-  const [noOfMembers, setNoOfMembers] = useState('');
-  const [inquiryType, setInquiryType] = useState('');
+  // const [societyName, setSocietyName] = useState('');
+  // const [societAddress, setSocietyAddress] = useState('');
+  // const [noOfMembers, setNoOfMembers] = useState('');
+  // const [inquiryType, setInquiryType] = useState('');
   const handleSubmit = async (e) => {
     e.preventDefault();
  // Validate form fields
@@ -94,10 +94,10 @@ const truncateContent = (content, wordCount = 20) => {
     name === '' ||
     lastName==='' ||
     contactNumber === '' ||
-    societyName === '' ||
-    societAddress === '' ||
-    noOfMembers === '' ||
-    inquiryType === '' ||
+    // societyName === '' ||
+    // societAddress === '' ||
+    // noOfMembers === '' ||
+    // inquiryType === '' ||
     email === '' ||
     message === ''
   ) {
@@ -113,11 +113,11 @@ const truncateContent = (content, wordCount = 20) => {
       
       message,
       contactNumber,
-      societyName,
-      societAddress,
-      noOfMembers,
-      services,
-      inquiryType,
+      // societyName,
+      // societAddress,
+      // noOfMembers,
+      // services,
+      // inquiryType,
     };
 
     try {
@@ -136,10 +136,10 @@ const truncateContent = (content, wordCount = 20) => {
         setEmail('');
         setMessage('');
         setContactNumber('');
-        setSocietyName('');
-        setSocietyAddress('');
-        setNoOfMembers('');
-        setInquiryType('')
+        // setSocietyName('');
+        // setSocietyAddress('');
+        // setNoOfMembers('');
+        // setInquiryType('')
       } else {
         alert('Error sending message. Please try again.');
       }

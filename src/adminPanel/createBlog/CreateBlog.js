@@ -52,20 +52,27 @@ const CreateBlog = () => {
     }));
 
     try { // Add data to the store
+      
     if (selectedImage) {
+
       const storageRef = storage.ref();
       const imageRef = storageRef.child(`blog_images/${selectedImage.name}`);
       await imageRef.put(selectedImage);
-      const imageUrl = await imageRef.getDownloadURL();
-     
-  
-    Blogs.add({
+      var imageUrl = await imageRef.getDownloadURL();
+
+    }
+    let obj ={
       Title: title,
       Subheadings: subheadingsData,
       publish: false,
       published_on: fb.firestore.Timestamp.fromDate(new Date()),
-      imageUrl:imageUrl,
-    })
+     
+    }
+    if (imageUrl){
+      obj["imageUrl"]=imageUrl;
+    }
+  
+    Blogs.add(obj)
       .then((docRef) => {
         alert('Data Successfully Submitted');
       })
@@ -73,7 +80,7 @@ const CreateBlog = () => {
         console.error('Error adding document: ', error);
       });
      } 
-    }
+    
       catch (error) {
       console.error('Error uploading image or adding document: ', error);
     }
@@ -114,7 +121,7 @@ const CreateBlog = () => {
       <form onSubmit={(event) => sub(event)}>
         <div className="createBlog-container">
           <h1>Create</h1>
-          <p>Please fill in this form to create a Bye-Laws </p>
+          <p>Please fill in this form to create a blog </p>
           <label htmlFor="image" style={{marginRight:"20px"}}><b>Image</b></label>
 <input
   type="file"

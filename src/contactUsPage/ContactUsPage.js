@@ -40,33 +40,35 @@ function ContactUsPage() {
       lastName === '' ||
 
       contactNumber === '' ||
-      societyName === '' ||
-      societAddress === '' ||
-      noOfMembers === '' ||
-      inquiryType === '' ||
+      // societyName === '' ||
+      // societAddress === '' ||
+      // noOfMembers === '' ||
+      // inquiryType === '' ||
       email === '' ||
       message === ''
-    ) {
-      alert('Please fill in all fields before submitting.');
+    )
+     {
+      debugger;
+      alert('Hello.');
       return;
     }
   
   
       const formData = {
         name,
-        services,
+        // services,
         lastName,
         email,
         message,
         contactNumber,
-        societyName,
-        societAddress,
-        noOfMembers,
-        inquiryType,
+        // societyName,
+        // societAddress,
+        // noOfMembers,
+        // inquiryType,
       };
   
       try {
-        const response = await fetch('https://shy-teal-drill-suit.cyclic.app/api/send-email', {
+        const response = await fetch('https://localhost:3001/api/send-email', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -80,10 +82,10 @@ function ContactUsPage() {
           setEmail('');
           setMessage('');
           setContactNumber('');
-          setSocietyName('');
-          setSocietyAddress('');
-          setNoOfMembers('');
-          setInquiryType('')
+          // setSocietyName('');
+          // setSocietyAddress('');
+          // setNoOfMembers('');
+          // setInquiryType('')
         } else {
           alert('Error sending message. Please try again.');
         }
@@ -110,7 +112,7 @@ function ContactUsPage() {
     <div class="form-wrapper">
 <div className='form-div-2'>
 <input class="input input-element" name="Name" style={{marginRight: "10px"}} value={name} onChange={(e) => setName(e.target.value)}  placeholder="First Name"/>
-      <input class="input input-element" name="Name"  value={lastName} onChange={(e) => setLastName(e.target.value)}  placeholder="Last Name"/>
+<input class="input input-element" name="Name"  value={lastName} onChange={(e) => setLastName(e.target.value)}  placeholder="Last Name"/>
 
 </div>
 
@@ -118,10 +120,7 @@ function ContactUsPage() {
 
 <input class="input input-element" name="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)}  placeholder="Email"/>
 
-
-    
-      
-      <textarea class="textinput input-element" value={message} onChange={(e) => setMessage(e.target.value)}  placeholder="Message"></textarea>
+<textarea class="textinput input-element" value={message} onChange={(e) => setMessage(e.target.value)}  placeholder="Message"></textarea>
       <button class="button" onClick={handleSubmit}>
         Send
       </button>
