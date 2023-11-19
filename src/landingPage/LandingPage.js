@@ -216,7 +216,7 @@ const truncateContent = (content, wordCount = 20) => {
   <img  className='img_pod-img' src={logo} alt="random image"/>
 </div>
 <div className="container_copy">
-  <h3 className="container_copy-date">12 January 2019</h3>
+  <h3 className="container_copy-date">Shashi kumar </h3>
   <h1 className="container_copy-title">{blog?.Title}</h1>
   
   
